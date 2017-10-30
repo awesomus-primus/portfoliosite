@@ -1,0 +1,21 @@
+#navbar{
+    background-color: darkcyan;
+}
+
+.button{
+    background-color: lightcyan;
+    text-decoration-color: black;
+}
+
+.button:hover{
+    background-color: darkcyan;
+    text-decoration-color: white;
+}
+
+.wrapper-even{
+    background-color: lightcyan;
+}
+
+.wrapper-odd{    
+    background-color: darkcyan;
+}
