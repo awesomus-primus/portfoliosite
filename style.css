@@ -1,21 +1,76 @@
-#navbar{
+body{
     background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    display: block;
+    border-block-start: 5px;
+    border-block-end: 5px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+li ul{
+    background-color: lightcyan;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0;
 }
 
 .button{
     background-color: lightcyan;
-    text-decoration-color: black;
+    color: darkcyan;
 }
 
 .button:hover{
     background-color: darkcyan;
-    text-decoration-color: white;
+    color: lightcyan;
 }
 
-.wrapper-even{
+.wrapper{
+    border-radius: 4px;
+    text-align: center;
+}
+
+.even{
     background-color: lightcyan;
+    color: darkcyan;
 }
 
-.wrapper-odd{    
+.odd{    
     background-color: darkcyan;
+    color: lightcyan;
+}
+
+.columns{
+    display: inline-block;
+    block-size: 25%;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#intro{
+    display: block;
+    padding-top: 2%;
+}
+
+.textbody{
+    padding: 1%;
 }

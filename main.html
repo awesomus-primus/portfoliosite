@@ -8,6 +8,7 @@
     <title>Welcome to Yordan Angelov's Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -16,20 +17,63 @@
         - introduction
         - portfolio structure
         - contact details with links to LinkedIn and GitHub -->
-    <div id="navbar">
-        <li>
-            <ul class="button" id="home">Home</ul>
-            <ul class="button" id="portfolio">Portfolio</ul>
-            <ul class="button" id="contact">Contact</ul>
-        </li>
-    </div>
-    <div class="wrapper-even">
+        <div id="navbar" class="navbar-fixed-top">
+            <li>
+                <ul class="button" id="home">Home</ul>
+                <ul class="button" id="portfolio">Portfolio</ul>
+                <ul class="button" id="contact">Contact</ul>
+            </li>
+        </div>
+    
+
+    <div class="wrapper even" id="intro">
         <div class="textbody">
-            <h1>introduction</h1>
+            <h1>Introduction</h1>
+            <h3>Having graduated from the Retail Management course of Bournemouth University in June 2017, <br> I recently joined
+                Ten10's Graduate Academy as a Test Engineer. After finishing first in the Graduate Academy,<br> I spent a
+                trial week at Capgemini and was located at HMRC's Worthing offices.</h3>
         </div>
     </div>
-    <div class="wrapper-odd"></div>
-    <div class="wrapper-even"></div>
+
+    <div class="wrapper odd">
+        <div class="textbody">
+            <h1>Areas of Specialization</h1>
+            <h3>The following areas will be my primary focus over the course of my development in Ten10:</h3>
+            <div>
+                <!-- Could link the images to the respective wikipedia pages that will explain what they are
+                - Could also add a hover text over them explaining what they do -->
+                <div class="spec columns">Test Automation
+                    <div class="img holder">
+                        <img src="icons\automation-256.png" alt="Automation Icon" id="automation">
+                    </div>
+                </div>
+                <div class="spec columns">Technical Testing
+                    <div class="img holder">
+                        <img src="icons\test-256.png" alt="Technical Testing Icon" id="techtest">
+                    </div>
+                </div>
+                <div class="spec columns">Programming Languages
+                    <div class="img holder">
+                        <img src="icons\programming-256.png" alt="Programming Languages Icon" id="proglang">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper even">
+        <div class="textbody">
+            <h1>Portfolio</h1>
+            <h3>While I currently have no projects that could constitute a portfolio, <br>
+                my GitHub contains all of my current work-in-progress. </h3>
+        </div>
+    </div>
+
+    <div class="wrapper odd">
+        <div class="textbody">
+            <h1>Contact</h1>
+        </div>
+    </div>
 </body>
 
-</html>DOCTYPE>
+</html>
