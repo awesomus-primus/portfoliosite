@@ -17,18 +17,18 @@
         - introduction
         - portfolio structure
         - contact details with links to LinkedIn and GitHub -->
-        <div id="navbar" class="navbar-fixed-top">
-            <li>
-                <ul class="button" id="home">Home</ul>
-                <ul class="button" id="portfolio">Portfolio</ul>
-                <ul class="button" id="contact">Contact</ul>
-            </li>
-        </div>
-    
+    <div id="navbar" class="navbar-fixed-top">
+        <li>
+            <a href="#intro" class="link"><ul class="button">Home</ul></a>
+            <a href="#areas" class="link"><ul class="button">Areas of Specialization</ul></a>
+            <a href="#portfolio" class="link"><ul class="button">Portfolio</ul></a>
+            <a href="#contact" class="link"><ul class="button">Contact</ul></a>
+        </li>
+    </div>
 
     <div class="wrapper even" id="intro">
         <div class="textbody">
-            <h1>Introduction</h1>
+            <h1 class="titles">About me</h1>
             <h3>Having graduated from the Retail Management course of Bournemouth University in June 2017, <br> I recently joined
                 Ten10's Graduate Academy as a Test Engineer. After finishing first in the Graduate Academy,<br> I spent a
                 trial week at Capgemini and was located at HMRC's Worthing offices.</h3>
@@ -37,11 +37,13 @@
 
     <div class="wrapper odd">
         <div class="textbody">
-            <h1>Areas of Specialization</h1>
+            <h1 class="titles" id="areas">Areas of Specialization</h1>
             <h3>The following areas will be my primary focus over the course of my development in Ten10:</h3>
             <div>
                 <!-- Could link the images to the respective wikipedia pages that will explain what they are
-                - Could also add a hover text over them explaining what they do -->
+                - Could also add a hover text over them explaining what they do
+                - Could make the images responsive - when you hover they start rotating around their axis
+                or the gears start spinning -->
                 <div class="spec columns">Test Automation
                     <div class="img holder">
                         <img src="icons\automation-256.png" alt="Automation Icon" id="automation">
@@ -63,17 +65,33 @@
 
     <div class="wrapper even">
         <div class="textbody">
-            <h1>Portfolio</h1>
-            <h3>While I currently have no projects that could constitute a portfolio, <br>
-                my GitHub contains all of my current work-in-progress. </h3>
+            <h1 class="titles" id="portfolio">Portfolio</h1>
+            <h3>While I currently have no projects that could constitute a portfolio, <br> my GitHub contains all of my current
+                work-in-progress. </h3>
+            <!-- Add a "press me" hover text over the icon -->
+            <a href="https://github.com/YordanAngelov">
+                    <img src="icons\github-64.png" alt="Github Link">
+                </a>
         </div>
     </div>
 
     <div class="wrapper odd">
         <div class="textbody">
-            <h1>Contact</h1>
+            <h1 class="titles" id="contact">Contact me</h1>
+                <div class="columns">
+                    <a href="https://www.linkedin.com/in/yordan-angelov-75528a103">
+                        <img src="icons\linkedin-64.png" alt="LinkedIn Link">
+                    </a>
+                </div>
+                <div class="columns">yordan.angelov@ten10.com</div>
+                <div class="columns">+44 7835 228 249</div>
         </div>
     </div>
+
+    <footer class="navbar-fixed-bottom">
+        <i>Copyright © 2017 Yordan Angelov</i>
+    </footer>
+
 </body>
 
 </html>

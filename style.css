@@ -23,20 +23,22 @@ div{
 
 li ul{
     background-color: lightcyan;
-    display: inline-block;
     vertical-align: middle;
+    display: inline-block;
     text-align: center;
     padding: 10px;
     border-radius: 2px;
     margin: 0;
 }
 
-.button{
-    background-color: lightcyan;
+.button, .link, .link:link, .link:visited, .even{
+    text-decoration: none;
     color: darkcyan;
+    background-color: lightcyan;
 }
 
-.button:hover{
+.button:hover, .link:hover, .odd{
+    text-decoration: none;
     background-color: darkcyan;
     color: lightcyan;
 }
@@ -44,16 +46,6 @@ li ul{
 .wrapper{
     border-radius: 4px;
     text-align: center;
-}
-
-.even{
-    background-color: lightcyan;
-    color: darkcyan;
-}
-
-.odd{    
-    background-color: darkcyan;
-    color: lightcyan;
 }
 
 .columns{
@@ -73,4 +65,13 @@ li ul{
 
 .textbody{
     padding: 1%;
+}
+
+.titles{
+    font-weight: bold;
+}
+
+footer{
+    color: lightcyan;
+    text-align: right;
 }
