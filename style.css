@@ -2,7 +2,14 @@ body{
     background-color: darkcyan;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 0px;
+}
+
+.even, #navbar, li ul, .button, .link, .link:link, .link:visited{
+    color: darkcyan;
+    background-color: lightcyan;
 }
 
 div{
@@ -18,23 +25,19 @@ div{
     display: block;
     text-align: center;
     font-weight: bold;
-    background-color: lightcyan;
 }
 
 li ul{
-    background-color: lightcyan;
     vertical-align: middle;
-    display: inline-block;
     text-align: center;
-    padding: 10px;
-    border-radius: 2px;
+    padding: 15px;
     margin: 0;
 }
 
-.button, .link, .link:link, .link:visited, .even{
+.button, .link, .link:link, .link:visited{
+    display: inline-block;
     text-decoration: none;
-    color: darkcyan;
-    background-color: lightcyan;
+    border-radius: 5px;
 }
 
 .button:hover, .link:hover, .odd{
@@ -44,34 +47,71 @@ li ul{
 }
 
 .wrapper{
-    border-radius: 4px;
     text-align: center;
+    padding: 1%;
 }
 
 .columns{
     display: inline-block;
-    block-size: 25%;
-    margin-block-end: 10px;
-    margin-block-start: 10px;
     text-align: center;
-    font-weight: bold;
+    font-size: 24px;
     padding: 10px;
 }
 
 #intro{
     display: block;
-    padding-top: 2%;
+    padding-top: 2.5%;
 }
 
-.textbody{
-    padding: 1%;
+.subtitles, .details, .info{
+    font-size: 18px;
+}
+
+.subtitles{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .titles{
+    font-size: 30px;
     font-weight: bold;
 }
 
 footer{
     color: lightcyan;
     text-align: right;
+}
+
+#me{
+    border-radius: 100%;
+    float: top;
+}
+
+#me:hover, .inner-layer:hover{
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation{
+    from {
+        -webkit-transform: rotate3d(0,1,0, 0deg);
+    }
+    to {
+        -webkit-transform: rotate3d(0,1,0, 360deg);
+    }
+}
+
+.outer-layer{
+    display: block;
+    block-size: 100%;
+}
+
+.inner-layer{
+    width: 15%;
+    height: 200px;
+    margin: 0.5%;
+    padding: 0.5%;
+    display: inline-block;
+    background-color: darkcyan;
+    color: lightcyan;
+    border-radius: 5%;
 }
