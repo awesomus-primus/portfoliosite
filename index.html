@@ -14,11 +14,6 @@
 </head>
 
 <body>
-    <!-- Add:
-        - nav bar -
-        - introduction
-        - portfolio structure
-        - contact details with links to LinkedIn and GitHub -->
     <div id="navbar" class="navbar-fixed-top">
         <li id="navbar-list">
             <a href="#intro" class="link text-size-4">
@@ -38,12 +33,7 @@
 
     <div class="wrapper even" id="intro">
         <div class="textbody">
-            <h1 class="titles text-size-1">About me</h1>
-            <!-- Add blocks that rotate and show:
-            - university degree 
-            - work experience
-            - interests and hobbies?
-            - important influencers -->
+            <h1 class="text-size-1" id="about">About me</h1>
             <div class="imgholder">
                 <img src="myimage.jpg" alt="My Photo" id="me">
             </div>
@@ -83,9 +73,9 @@
         </div>
     </div>
 
-    <div class="wrapper odd">
+    <div class="wrapper odd" id="areas">
         <div class="textbody">
-            <h1 class="titles text-size-1" id="areas">Areas of Specialization</h1>
+            <h1 class="text-size-1">Areas of Specialization</h1>
             <h3 class="subtitles text-size-3">The following areas will be my primary focus over the course of my development in Ten10:</h3>
             <div>
                 <!-- Could link the images to the respective wikipedia pages that will explain what they are
@@ -111,9 +101,9 @@
         </div>
     </div>
 
-    <div class="wrapper even">
+    <div class="wrapper even" id="portfolio">
         <div class="textbody">
-            <h1 class="titles text-size-1" id="portfolio">Portfolio</h1>
+            <h1 class="text-size-1">Portfolio</h1>
             <h3 class="subtitles text-size-3">While I currently have no projects that could constitute a portfolio, my GitHub contains all of my current work-in-progress.
             </h3>
             <!-- Add a "press me" hover text over the icon -->
@@ -123,9 +113,9 @@
         </div>
     </div>
 
-    <div class="wrapper odd">
+    <div class="wrapper odd" id="contact">
         <div class="textbody">
-            <h1 class="titles text-size-1" id="contact">Contact me</h1>
+            <h1 class="text-size-1">Contact me</h1>
             <div class="columns text-size-2">
                 <a href="https://www.linkedin.com/in/yordan-angelov-75528a103">
                         <img src="Icons\linkedin-64.png" alt="LinkedIn Link">
@@ -144,6 +134,7 @@
             <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
             <input type="submit">
         </form>
+        <span style="height:300px; width:300px; background-color:black; position:absolute;">ASd</span>
     </div>
 
     <footer class="navbar-fixed-bottom">

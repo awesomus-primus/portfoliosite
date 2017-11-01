@@ -122,11 +122,11 @@ footer{
 }
 
 #me{
-    border-radius: 100%;
     float: top;
+    border-radius: 100%;
 }
 
-#me:hover{
+{
     -webkit-animation: rotation 2s infinite linear;
 }
 
@@ -170,4 +170,15 @@ div.outer-layer div.flip div.back{
     float: left;
     max-width: 100%;
     height: 20px;
+}
+
+#about{
+    text-align: right;
+    margin-right: 125%;
+    margin-left: -100%;
+    padding-right: 1%;
+    background-color: darkcyan;
+    color: lightcyan;
+    position: relative;
+    border-radius: 5px;
 }
