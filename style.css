@@ -51,10 +51,6 @@ input[type=submit]{
     border: 2px outset gray;
 }
 
-form{
-    font-weight: bold;
-}
-
 div{
     display: block;
     border-block-start: 5px;
@@ -120,6 +116,11 @@ footer{
     padding: 1%;
 }
 
+.details{
+    line-height: 64px;
+    text-align: center;
+}
+
 #me{
     border-radius: 100%;
     float: top;
@@ -146,25 +147,24 @@ footer{
     box-sizing: inherit;
     display: table-cell;
     width: 20%;
-    height: 300px !important;
+    height: 250px !important;
     background: lightcyan;
     padding: 1%;
     text-align: center !important;
     opacity: 0.999999;
-    margin: 0 20% 10% 0;
 }
 
 div.outer-layer div.flip div.front{
     border-radius: 5%;
     width: 90% !important;
     height: 90% !important;
-    padding-top: 35%;
+    padding-top: 30%;
 }
 
 div.outer-layer div.flip div.back{
     border-radius: 5%;
-    padding: 40% 10% 10% 10%;
-    max-height: 300px;
+    padding: 30% 10% 10% 10%;
+    max-height: 250px;
 }
 #ten10{
     float: left;
