@@ -8,6 +8,8 @@
     <title>Yordan Angelov - Software Tester</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="flip-master/dist/jquery.flip.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -51,10 +53,13 @@
                         <div class="info"> </div>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="inner-layer">
+                <div class="box flip">
+                    <div class="inner-layer front">
+                        <h3 id="edu-head">Education</h3>
+                    </div>
+                    <div class="inner-layer back">
                         <div class="info">
-                            <h3>Education</h3>Graduated in BA (Hons) Retail Management with a 2:1 Degree on June 2017</div>
+                            Graduated in BA (Hons) Retail Management with a 2:1 Degree on June 2017</div>
                     </div>
                 </div>
                 <div class="box">
@@ -69,15 +74,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="box">
+                    <div class="inner-layer">
+                        <div class="info">
+                            <h3>Ten10</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="box x1">
                     <div class="inner-layer">
                         <div class="info"> </div>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
 
     <div class="wrapper odd">
@@ -133,10 +145,10 @@
         </div>
         <form>
             Name:<br>
-            <input type="text"><br>
-            Email:<br>
-            <input type="text"><br>
-            Message:<br>
+            <input type="text"><br> Email:
+            <br>
+            <input type="text"><br> Message:
+            <br>
             <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
             <input type="submit">
         </form>

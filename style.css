@@ -8,9 +8,14 @@ body{
     vertical-align: center;
 }
 
-.even, #navbar, li ul, .button, .link, .link:link, .link:visited, .box.x1{
+.even, .link, .link:link, .link:visited, .box.x1, .button:hover, .link:hover{
     color: darkcyan;
     background-color: lightcyan;
+}
+
+#navbar, li ul, .button{
+    color: lightcyan;
+    background-color: darkcyan;
 }
 
 input[type=text],  textarea#message{
@@ -60,10 +65,9 @@ li ul{
 .button, .link, .link:link, .link:visited{
     display: inline-block;
     text-decoration: none;
-    border-radius: 5px;
 }
 
-.button:hover, .link:hover, .odd, .box, .info{
+.odd, .box, .info{
     text-decoration: none;
     background-color: darkcyan;
     color: lightcyan;
@@ -71,6 +75,7 @@ li ul{
 
 .wrapper{
     text-align: center;
+    vertical-align: center;
     padding: 1%;
 }
 
@@ -115,7 +120,7 @@ footer{
 }
 
 #me:hover{
-    -webkit-animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 5s infinite linear;
 }
 
 @-webkit-keyframes rotation{
@@ -134,18 +139,28 @@ footer{
 .box{
     box-sizing: border-box;
     display: table-cell;
-    width: 25%;
+    width: 20%;
+    height: 100%;
     border-radius: 12px;
     border-style: solid;
     border-color: lightcyan;
     padding: 1%;
-    table-layout: 
+    text-align: center;
 }
 
 .inner-layer{
     width: 90%;
     border-radius: 5%;
     font-size: 18px;
+    margin: auto;
+}
+
+#edu-head, .back{
+    top: 45%;
+    margin: auto;
+    line-height: 100%;
+    height: 100%;
+    width: auto;
 }
 
 li#work-xp ul{
