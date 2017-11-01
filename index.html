@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yordan Angelov - Software Tester</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,7 +21,8 @@
         - contact details with links to LinkedIn and GitHub -->
     <div id="navbar" class="navbar-fixed-top">
         <li id="navbar-list">
-            <a href="#intro" class="link">
+            <img src="Icons\ten10-200.png" alt="The Ten10 Icon" id="ten10">
+            <a href="#intro" class="link text-size-4">
                 <ul class="button">Home</ul>
             </a>
             <a href="#areas" class="link">
@@ -39,7 +39,7 @@
 
     <div class="wrapper even" id="intro">
         <div class="textbody">
-            <h1 class="titles">About me</h1>
+            <h1 class="titles text-size-1">About me</h1>
             <!-- Add blocks that rotate and show:
             - university degree 
             - work experience
@@ -48,18 +48,16 @@
             <div class="imgholder">
                 <img src="myimage.jpg" alt="My Photo" id="me">
             </div>
-            <div class="outer-layer">
+            <div class="outer-layer text-size-2">
                 <div class="box x1">
-                    <div class="inner-layer">
-                        <div class="info"> </div>
-                    </div>
+                    <div class="info"> </div>
                 </div>
                 <div class="box flip">
                     <div class="info front">
                         <h3 id="edu-head">Education</h3>
                     </div>
                     <div class="info back">
-                        Graduated in BA (Hons) Retail Management with a 2:1 Degree on June 2017
+                        2:1 Degree in BA (Hons) Retail Management
                     </div>
                 </div>
                 <div class="box flip">
@@ -67,23 +65,19 @@
                         <h3 id="work-head">Work experience</h3>
                     </div>
                     <div class="info back">
-                        Software Test Engineer since 18.09.2017<br> 
-                        Student Ambassador for 9 months<br> 
-                        Accounts Assistant for 13 months
+                        Software Test Engineer<br> Student Ambassador<br> Accounts Assistant
                     </div>
                 </div>
-                <div class="box">
-                    <div class="inner-layer">
-                        <div class="info">
-                            <h3>Ten10</h3>
-                        </div>
+                <div class="box flip">
+                    <div class="info front">
+                        <h3>Ten10</h3>
+                    </div>
+                    <div class="info back">
+                        Finished 1st in the Graduate Academy<br> Placed at Capgemini
                     </div>
                 </div>
                 <div class="box x1">
-                    <div class="inner-layer">
-                        <div class="info"> </div>
-                    </div>
-
+                    <div class="info"> </div>
                 </div>
             </div>
 
@@ -92,24 +86,24 @@
 
     <div class="wrapper odd">
         <div class="textbody">
-            <h1 class="titles" id="areas">Areas of Specialization</h1>
-            <h3 class="subtitles">The following areas will be my primary focus over the course of my development in Ten10:</h3>
+            <h1 class="titles text-size-1" id="areas">Areas of Specialization</h1>
+            <h3 class="subtitles text-size-3">The following areas will be my primary focus over the course of my development in Ten10:</h3>
             <div>
                 <!-- Could link the images to the respective wikipedia pages that will explain what they are
                 - Could also add a hover text over them explaining what they do
                 - Could make the images responsive - when you hover they start rotating around their axis
                 or the gears start spinning -->
-                <div class="spec columns">Test Automation
+                <div class="spec columns text-size-2">Test Automation
                     <div class="img holder">
                         <img src="Icons\automation-256.png" alt="Automation Icon" id="automation">
                     </div>
                 </div>
-                <div class="spec columns">Technical Testing
+                <div class="spec columns text-size-2">Technical Testing
                     <div class="img holder">
                         <img src="Icons\test-256.png" alt="Technical Testing Icon" id="techtest">
                     </div>
                 </div>
-                <div class="spec columns">Programming Languages
+                <div class="spec columns text-size-2">Programming Languages
                     <div class="img holder">
                         <img src="Icons\programming-256.png" alt="Programming Languages Icon" id="proglang">
                     </div>
@@ -120,8 +114,8 @@
 
     <div class="wrapper even">
         <div class="textbody">
-            <h1 class="titles" id="portfolio">Portfolio</h1>
-            <h3 class="subtitles">While I currently have no projects that could constitute a portfolio, my GitHub contains all of my current work-in-progress.
+            <h1 class="titles text-size-1" id="portfolio">Portfolio</h1>
+            <h3 class="subtitles text-size-3">While I currently have no projects that could constitute a portfolio, my GitHub contains all of my current work-in-progress.
             </h3>
             <!-- Add a "press me" hover text over the icon -->
             <a href="https://github.com/YordanAngelov">
@@ -132,16 +126,16 @@
 
     <div class="wrapper odd">
         <div class="textbody">
-            <h1 class="titles" id="contact">Contact me</h1>
-            <div class="columns">
+            <h1 class="titles text-size-1" id="contact">Contact me</h1>
+            <div class="columns text-size-2">
                 <a href="https://www.linkedin.com/in/yordan-angelov-75528a103">
                         <img src="Icons\linkedin-64.png" alt="LinkedIn Link">
                     </a>
             </div>
-            <div class="columns details">yordan.angelov@ten10.com</div>
-            <div class="columns details">+44 7835 228 249</div>
+            <div class="columns details text-size-2">yordan.angelov@ten10.com</div>
+            <div class="columns details text-size-2">+44 7835 228 249</div>
         </div>
-        <form>
+        <form class="text-size-3">
             Name:<br>
             <input type="text"><br> Email:
             <br>
