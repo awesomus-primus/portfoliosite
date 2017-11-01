@@ -55,12 +55,14 @@ div{
     font-weight: bold;
 }
 
-li ul{
+li#navbar-list ul{
     vertical-align: middle;
     text-align: center;
     padding: 15px;
     margin: 0;
 }
+
+
 
 .button, .link, .link:link, .link:visited{
     display: inline-block;
@@ -137,7 +139,7 @@ footer{
 }
 
 .box{
-    box-sizing: border-box;
+    box-sizing: content-box;
     display: table-cell;
     width: 20%;
     height: 100%;
@@ -155,19 +157,13 @@ footer{
     margin: auto;
 }
 
-#edu-head, .back{
-    top: 45%;
-    margin: auto;
-    line-height: 100%;
-    height: 100%;
-    width: auto;
-}
 
-li#work-xp ul{
-    text-decoration: none;
-    list-style: none;
-    background-color: darkcyan;
-    color: lightcyan;
-    margin: 0;
-    padding: 0;
+#edu-head, #work-head, .front, .back{
+    margin: auto;
+    height: 90% !important;
+    width: 90% !important;
+    vertical-align: center !important;
+    text-align: center !important;
+    top: 10% !important;
+    position: relative !important;
 }
