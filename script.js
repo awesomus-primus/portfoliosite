@@ -53,33 +53,23 @@ $(document).ready(function () {
 
     var navbarToggle = document.getElementById("navbar-toggle-wrapper");
     var navbarMenu = document.getElementById("nav-menu");
+    var navbarToggleIcon = document.getElementById("navbar-toggle-img");
+    var navbarToggleClose = document.getElementById("navbar-toggle-x");
 
-    function toggleNavMenu() {
-        navbarToggle.classList.toggle("active");
-
-        toggleNav();
+    navbarToggle.addEventListener("click", toggleMenu);
+    
+    function toggleMenu() {
+        if (navbarMenu.style.display === "none") {
+            navbarMenu.style.display = "inline";
+            navbarToggleIcon.style.display = "none";
+            navbarToggleClose.style.display = "block";
+        } else {
+            navbarMenu.style.display = "none";
+            navbarToggleIcon.style.display = "block";
+            navbarToggleClose.style.display = "none";
+        }
+        
     }
-
-    function toggleNav() {
-        navbarMenu.classList.toggle("active");
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        navbarToggle.addEventListener("click", function () { toggleNavMenu(); });
-    });
-
-    var burgerMenu = document.getElementById("burger_menu_wrapper");
-    var navMenu = document.getElementById("nav_menu");
-
-    function toggleBurgerMenu() {
-        burgerMenu.classList.toggle("active");
-
-        toggleNav();
-    };
-
-    function toggleNav() {
-        navMenu.classList.toggle("active");
-    }
-
 
 });
+
