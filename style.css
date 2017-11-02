@@ -241,3 +241,7 @@ div.flip div.back{
     position: absolute;
     transition: 1s;
 }
+
+#intro{
+    z-index: 1;
+}
