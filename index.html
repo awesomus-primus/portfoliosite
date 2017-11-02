@@ -15,25 +15,23 @@
 
 <body>
     <div id="navbar" class="navbar-fixed-top">
-        <li id="navbar-list">
-            <a href="#intro" class="link text-size-4">
-                <ul class="button">Home</ul>
-            </a>
-            <a href="#areas" class="link">
-                <ul class="button">Areas of Specialization</ul>
-            </a>
-            <a href="#portfolio" class="link">
-                <ul class="button">Portfolio</ul>
-            </a>
-            <a href="#contact" class="link">
-                <ul class="button">Contact</ul>
-            </a>
-        </li>
+
+        <div id="navbar-toggle-wrapper">
+            <img src="Icons\navigation-32.png" alt="Navigation Bar Toggle" id="navbar-toggle-img">
+        </div>
+
+        <!-- Make the page jump smoother -->
+        <div id="nav-menu">
+            <a href="#intro" class="link text-size-4">Home</a>
+            <a href="#areas" class="link text-size-4">Specialization</a>
+            <a href="#portfolio" class="link text-size-4">Portfolio</a>
+            <a href="#contact" class="link text-size-4">Contact</a>
+        </div>
     </div>
 
-    <div class="wrapper even" id="intro">
+    <div class="wrapper even">
         <div class="textbody">
-            <h1 class="text-size-1" id="about">About me</h1>
+            <h1 class="text-size-1" id="intro">About me</h1>
             <div class="imgholder">
                 <img src="myimage.jpg" alt="My Photo" id="me">
             </div>
@@ -73,9 +71,9 @@
         </div>
     </div>
 
-    <div class="wrapper odd" id="areas">
+    <div class="wrapper odd">
         <div class="textbody">
-            <h1 class="text-size-1">Areas of Specialization</h1>
+            <h1 class="text-size-1" id="areas">Specialization</h1>
             <h3 class="subtitles text-size-3">The following areas will be my primary focus over the course of my development in Ten10:</h3>
             <div>
                 <!-- Could link the images to the respective wikipedia pages that will explain what they are
@@ -101,9 +99,9 @@
         </div>
     </div>
 
-    <div class="wrapper even" id="portfolio">
+    <div class="wrapper even">
         <div class="textbody">
-            <h1 class="text-size-1">Portfolio</h1>
+            <h1 class="text-size-1" id="portfolio">Portfolio</h1>
             <h3 class="subtitles text-size-3">While I currently have no projects that could constitute a portfolio, my GitHub contains all of my current work-in-progress.
             </h3>
             <!-- Add a "press me" hover text over the icon -->
@@ -113,28 +111,31 @@
         </div>
     </div>
 
-    <div class="wrapper odd" id="contact">
+    <div class="wrapper odd">
         <div class="textbody">
-            <h1 class="text-size-1">Contact me</h1>
+            <h1 class="text-size-1" id="contact">Contact me</h1>
+
+            <form class="text-size-2">
+                <span>Use the form below to contact me. Alternatively, my contact details are provided at the bottom.</span>
+                <br><br>Name:<br>
+                <input type="text"><br> Email:
+                <br>
+                <input type="text"><br> Subject:
+                <br>
+                <input type="text"><br> Message:
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                <input type="submit">
+            </form>
+
             <div class="columns text-size-2">
                 <a href="https://www.linkedin.com/in/yordan-angelov-75528a103">
-                        <img src="Icons\linkedin-64.png" alt="LinkedIn Link">
-                    </a>
+                            <img src="Icons\linkedin-64.png" alt="LinkedIn Link">
+                        </a>
             </div>
             <div class="columns details text-size-2">yordan.angelov@ten10.com</div>
             <div class="columns details text-size-2">+44 7835 228 249</div>
         </div>
-        <form class="text-size-3">
-            <span style="font-weight:normal;">Should you have any questions or enquiries, feel free to contact me using the form below or my contact details above</span>
-            <br><br>Name:<br>
-            <input type="text"><br> Email:
-            <br>
-            <input type="text"><br> Message:
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
-            <input type="submit">
-        </form>
-        <span style="height:300px; width:300px; background-color:black; position:absolute;">ASd</span>
     </div>
 
     <footer class="navbar-fixed-bottom">

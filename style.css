@@ -8,7 +8,7 @@ body{
     vertical-align: center;
 }
 
-.even, .link, .link:link, .link:visited, .box.x1, .button:hover, .link:hover{
+.even, .box.x1, a.link:hover{
     color: darkcyan;
     background-color: lightcyan;
 }
@@ -30,9 +30,22 @@ body{
     font-size: 14px;
 }
 
-#navbar, li ul, .button{
+#navbar, div a.link{
     color: lightcyan;
     background-color: darkcyan;
+}
+
+div#navbar div.container{
+    position: absolute;
+    max-width: 10%;
+    margin: 0.5%;
+    margin-left: 0%;
+} 
+
+form{
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 input[type=text],  textarea#message{
@@ -41,7 +54,7 @@ input[type=text],  textarea#message{
     font-family: Arial, Helvetica, sans-serif;
     margin: 1px;
     border: 2px inset gray;
-    width: 33%;
+    width: 100%;
     font-weight: normal;
     font-size: normal;
 }
@@ -49,12 +62,10 @@ input[type=text],  textarea#message{
 input[type=submit]{
     color: black;
     border: 2px outset gray;
+    text-align: center;
 }
 
 div{
-    display: block;
-    border-block-start: 5px;
-    border-block-end: 5px;
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -65,16 +76,31 @@ div{
     display: block;
     text-align: center;
     font-weight: bold;
+    height: 50px;
 }
 
-li#navbar-list ul{
+div#nav-menu{
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+    position: fixed;
+}
+
+.active#nav-menu{
+    display: inline-block;
+}
+
+div#nav-menu a{
     vertical-align: middle;
     text-align: center;
     padding: 15px;
     margin: 0;
+    transition: 0.3s;
 }
 
-.button, .link, .link:link, .link:visited{
+a.link, a.link:link, a.link:visited{
     display: inline-block;
     text-decoration: none;
 }
@@ -89,17 +115,13 @@ li#navbar-list ul{
     text-align: center;
     vertical-align: center;
     padding: 1%;
+    max-width: 100%;
 }
 
 .columns{
     display: inline-block;
     text-align: center;
     padding: 10px;
-}
-
-#intro{
-    display: block;
-    padding-top: 3%;
 }
 
 .subtitles{
@@ -172,13 +194,42 @@ div.outer-layer div.flip div.back{
     height: 20px;
 }
 
-#about{
-    text-align: right;
-    margin-right: 125%;
-    margin-left: -100%;
-    padding-right: 1%;
+#intro{
+    margin-top: 4%;
+}
+
+#portfolio{
+    margin-top: 0%;
+}
+
+#intro, #portfolio{
+    text-align: center;
+    margin-right: 100%;
+    margin-left: -60%;
+    padding: 1%;
     background-color: darkcyan;
     color: lightcyan;
     position: relative;
     border-radius: 5px;
+}
+
+#areas, #contact{
+    margin-top: 0%;
+}
+
+#areas, #contact{
+    text-align: center;
+    margin-right: -60%;
+    margin-left: 100%;
+    padding: 1%;
+    background-color: lightcyan;
+    color: darkcyan;
+    position: relative;
+    border-radius: 5px;
+}
+
+#navbar-toggle-img{
+    margin: 0.5%;
+    float:left;
+    cursor: pointer;
 }
