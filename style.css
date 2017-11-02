@@ -30,7 +30,7 @@ body{
     font-size: 14px;
 }
 
-#navbar, div a.link{
+#navbar, div a.link, .items{
     color: lightcyan;
     background-color: darkcyan;
 }
@@ -169,24 +169,25 @@ footer{
     box-sizing: inherit;
     display: table-cell;
     width: 20%;
-    height: 250px !important;
+    height: 250px;
     background: lightcyan;
     padding: 1%;
     text-align: center !important;
     opacity: 0.999999;
 }
 
-div.outer-layer div.flip div.front{
+div.flip div.front{
     border-radius: 5%;
     width: 90% !important;
     height: 90% !important;
     padding-top: 30%;
 }
 
-div.outer-layer div.flip div.back{
+div.flip div.back{
     border-radius: 5%;
     padding: 30% 10% 10% 10%;
     max-height: 250px;
+
 }
 #ten10{
     float: left;
@@ -230,6 +231,6 @@ div.outer-layer div.flip div.back{
 
 #navbar-toggle-img{
     margin: 0.5%;
-    float:left;
+    float: left;
     cursor: pointer;
 }

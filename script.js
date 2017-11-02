@@ -1,7 +1,12 @@
 $(document).ready(function () {
 
     $(".flip").flip({
-        trigger: 'hover'
+        trigger: 'hover',
+    });
+
+    $(".vertical").flip({
+        trigger: 'hover',
+        axis: 'x'
     });
 
     $('#intro').animate({
@@ -49,18 +54,32 @@ $(document).ready(function () {
     var navbarToggle = document.getElementById("navbar-toggle-wrapper");
     var navbarMenu = document.getElementById("nav-menu");
 
-    function toggleNavMenu(){
+    function toggleNavMenu() {
         navbarToggle.classList.toggle("active");
 
         toggleNav();
     }
 
-    function toggleNav(){
+    function toggleNav() {
         navbarMenu.classList.toggle("active");
     }
 
-    document.addEventListener("DOMContentLoaded", function(){
-        navbarToggle.addEventListener("click", function() {toggleNavMenu();});
+    document.addEventListener("DOMContentLoaded", function () {
+        navbarToggle.addEventListener("click", function () { toggleNavMenu(); });
     });
+
+    var burgerMenu = document.getElementById("burger_menu_wrapper");
+    var navMenu = document.getElementById("nav_menu");
+
+    function toggleBurgerMenu() {
+        burgerMenu.classList.toggle("active");
+
+        toggleNav();
+    };
+
+    function toggleNav() {
+        navMenu.classList.toggle("active");
+    }
+
 
 });
