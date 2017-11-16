@@ -101,6 +101,12 @@ a.link, a.link:link, a.link:visited{
     text-decoration: none;
 }
 
+a.basic-link, a.basic-link:hover, a.basic-link:visited, a.basic-link:link{
+    text-decoration: none;
+    color: lightcyan;
+    transition: 1s;
+}
+
 .odd, .box, .info{
     text-decoration: none;
     background-color: darkcyan;
